@@ -1,0 +1,15 @@
+# Dependency directories
+node_modules/
+
+# Environment variables file
+.env
+
+# IDE files (e.g., for Visual Studio Code)
+.vscode/
+
+# Log files
+logs/
+*.log
+
+# Compiled files
+dist/
