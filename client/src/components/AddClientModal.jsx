@@ -12,6 +12,7 @@ export default function AddClientModal() {
 
     const [addClient] = useMutation(ADD_CLIENT, {
         variables: {name, email, phone}, 
+        // updating the cache allows data to be live reloaded without page refresh
         update(cache, { data: { addClient } }) {
             const { clients } = cache.readQuery({ query: 
             GET_CLIENTS});
