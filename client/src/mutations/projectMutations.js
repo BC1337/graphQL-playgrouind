@@ -16,7 +16,15 @@ mutation AddProject($name: String!, $description: String!, $clientId: ID!, $stat
 
     }
 }
+`
+
+const DELETE_PROJECT = gql `
+    mutation DeleteProjec($id: ID!){
+        deleteProject(id: $id) {
+            id
+        }
+    }
 
 `
 
-export { ADD_PROJECT };
+export { ADD_PROJECT, DELETE_PROJECT };
